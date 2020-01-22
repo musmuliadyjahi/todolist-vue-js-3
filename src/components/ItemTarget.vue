@@ -1,11 +1,18 @@
 <template>
   <div>
-    <input class="form-check-input" onclick type="checkbox" value id="defaultCheck1" />
+    <input
+      class="form-check-input"
+      onclick
+      type="checkbox"
+      value
+      id="defaultCheck1"
+    />
     <label
       class="form-check-label item"
-      v-bind:class="{'item-completed':targetSaya.isDone}"
+      v-bind:class="{ 'item-completed': targetSaya.isDone }"
       for="defaultCheck1"
-    >{{ targetSaya.namaTarget }}</label>
+      >{{ targetSaya.namaTarget }}</label
+    >
   </div>
 </template>
 
@@ -16,5 +23,4 @@ export default {
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
